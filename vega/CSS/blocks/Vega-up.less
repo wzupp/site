@@ -1,0 +1,61 @@
+// main: ../style.less
+
+.vega-u__foto {
+    display: block;
+    margin: 0 auto;
+}
+
+.Vega-up__a {
+    background-color: #E5E5E5;
+
+
+}
+
+.Vega-up__text {
+    font-size: 0.53rem;
+    color: @black;
+    text-decoration: none;
+    padding-left: 2.06rem;
+}
+
+.Vega-up__nav {
+    display: flex;
+    height: 100%;
+    margin-right: 2.06rem;
+
+}
+
+.vega-up__link {
+    margin-left: 2rem;
+    position: relative;
+
+    font-size: 0.93rem;
+    color: @black;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+
+    border-radius: 1.33rem;
+
+    &:after {
+        content: "";
+        width: 0;
+        height: 0.13rem;
+        background-color: @black;
+
+        position: absolute;
+        bottom: -0.33rem;
+        left: 0;
+        z-index: 1;
+
+        transition: width .2s linear;
+    }
+
+    &:hover,
+    &.active {
+
+        &:after {
+            width: 100%;
+        }
+    }
+}
